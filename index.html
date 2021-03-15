@@ -5,10 +5,169 @@
         <title>js-jsnacks-blocco-1</title>
     </head>
     <body>
+        <header>
+
+            <style media="screen">
+
+                .pari{
+                    color: green;
+                }
+
+                .dispari{
+                    color: red;
+                }
+
+            </style>
+
+            <div id="pari">
+
+            </div>
+
+            <div id="dispari">
+
+            </div>
+
+        </header>
 
         <script type="text/javascript">
-            
 
+            //1. L’utente inserisce due numeri in successione, con due prompt. Il software stampa il maggiore
+
+            /* var primoNumero = prompt('chiedi il primo numero');
+            var secondoNumero = prompt('chiedi il secondo numero');
+
+
+            if(primoNumero > secondoNumero){
+                console.log('il primo numero è maggiore ' + primoNumero);
+
+            }else if(primoNumero < secondoNumero){
+                console.log('il secondo numero è maggiore ' + secondoNumero);
+
+            }else{
+                console.log('sono uguali');
+            }
+
+            primo esercizo finito */
+
+// ___________________________________________________________________________________________________________________
+
+            //2.L’utente inserisce due parole in successione, con due prompt. Il software stampa prima la parola più corta, poi la parola più lunga.
+
+            /* var primaParola = prompt('chiedi il prima parola');
+            var secondaParola = prompt('chiedi il seconda parola');
+
+            var primaParolaLunga =  primaParola.length;
+            var secondaParolaLunga = secondaParola.length;
+
+            if (primaParola.length > secondaParola.length) {
+                console.log('questa è la prima parola dell\'utente, più lunga ' + primaParola);
+
+            }else if(primaParola.length < secondaParola.length){
+                console.log('questa è la seconda parola dell\'utente più lunga ' + secondaParola);
+
+            }else {
+                console.log('sono uguali');
+            }
+
+            secondo esercizio finito */
+// ___________________________________________________________________________________________________________________
+
+            /* 3.
+            Il software deve chiedere per 5 volte all’utente di inserire un numero.
+            Il programma stampa la somma di tutti i numeri inseriti. Esegui questo programma in due versioni, con il for e con il while */
+
+            /* var somma = 0;//inizializzo la var fuori dal for, così da poterla sommare con tutti i numeri inseeriti, altrimenti farebbe tutte operazioni diverse
+                for (var i = 0; i < 5; i++) {
+
+                    var numeroUtente = parseInt(prompt('chiedi un numero all\'utente'));
+                    somma += numeroUtente;
+
+                    console.log(numeroUtente, somma);
+                }
+            terzo esercizio finito /*
+
+// ___________________________________________________________________________________________________________________
+
+
+            /* 4. Chiedere all'utente un valore limite, poi richiedere all'utente una serie di valori finche'
+                la somma non supera il valore limite e stampare i valori forniti dall'utente */
+
+                /* var limiteUtente = prompt('chiedi all\'utente un valore limite');
+
+                var sommaLimite = [];//array vuoto, da riempire con valoriUtente, fino a che non raggiunge il valore definito da limiteUtente
+
+                var somma = 0;//inizializzo la variabile fuori altrimenti mi cicla male
+                var risultato =0;//inizializzo una variabile per valorizzare gli else
+
+                for (var i = 0; i < limiteUtente; i++) {//dico al for che deve ciclare fino al raggiungimento del limite utente
+
+                    if (somma < limiteUtente) { //metto la condizione che la somma deve essere minore del limite utente
+                        var valoriUtente = parseInt(prompt('chiedi all\'utente altri valori'));
+                        sommaLimite.push(valoriUtente);
+                        somma += valoriUtente;
+
+                    } else if (somma == limiteUtente) {
+                        risultato = 'perfettamente uguale ';
+
+                    }else {
+                        risultato = 'maggiore del limite stabilito '
+                    }
+
+                }
+                console.log('il limite utente è ' + limiteUtente + ' i valori utente sono ' + sommaLimite + ' la somma è ' + somma + ' il risultato è ' + risultato);
+
+                esercizio finito */
+
+// ___________________________________________________________________________________________________________________
+
+
+            /* 5. Crea due tag div con due id diversi. Un div avrà il testo colorato di rosso mentre l'altro di verde.
+             Partendo da un array di numeri, stampiamo nell'id rosso i numeri  dispari e in verde i numeri pari. */
+
+
+            /* var numbers = [15, 20, 1, 3, 22];
+            var numero = numbers[i];
+
+
+            for (var i = 0; i < numbers.length; i++) {
+                var x = numero % 2;
+
+                if (x == 0) {
+                    console.log('il risultato è pari me lo devi stampare di verde');
+
+                }else {
+                    console.log('il risultato è dispari me lo devi stampare di rosso');
+                }
+            }*/
+
+
+                //Richiedere all'utente dei valori finche' la relativa somma non supera il 50
+                    // var sum = 0;
+                    //     while (sum < 50) {
+                    //         var value = parseInt(prompt('Dimmi numero'));
+                    //         sum += value;
+                    //     }
+                    //     console.log(sum);
+
+
+
+
+                // Il software deve chiedere per 10 volte all'utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti
+                //
+                // var sum = 0;
+                //         for (var i=0;i<3;i++) {
+                //             var value = parseInt(prompt('Dimmi valore'));
+                //             sum += value;
+                //         }
+                //         console.log(sum);
+                //         var sum = 0;
+                //         var i = 0;
+                //         while (i < 3) {
+                //             var value = parseInt(prompt('Dimmi valore'));
+                //             sum += value;
+                //             i++;
+                //         }
+                //         console.log(sum);
         </script>
     </body>
 </html>
