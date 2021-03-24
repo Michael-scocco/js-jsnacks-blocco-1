@@ -168,6 +168,106 @@
                 //             i++;
                 //         }
                 //         console.log(sum);
+
+                // TODAY
+                // REPO: js-jsnacks-blocco-1
+                // GOAL:
+                // - Creare un oggetto che descriva uno studente con le
+                // seguenti proprietà: nome, cognome e età. Stampare a
+                // schermo attraverso il for in tutte le proprietà.
+
+
+// ___________________________________________________________________________________________________________________
+
+esercizio del 24/03/2021
+
+                var descrizioneStudente = {
+
+                    'nome' : 'michael',
+                    'cognome' : 'scocco',
+                    'età' : '34'
+                };
+                // console.log(descrizioneStudente);
+                //
+                // descrizioneStudente['nome'] = prompt('dimmi il tuo nome');
+                // descrizioneStudente['cognome'] = prompt('dimmi il tuo cognome');
+                // descrizioneStudente['età'] = prompt('dammi la tua età');
+                //
+                // console.log(descrizioneStudente);
+
+                for (var descrizioni in descrizioneStudente) {
+                    console.log(descrizioni, descrizioneStudente[descrizioni]);
+                }
+                // _____________________________________________________________________________
+
+                // - Creare un array di oggetti(cioè crea una array, con dentro gli oggetti) di studenti. Ciclare su tutti gli
+                // studenti e stampare per ognuno nome e cognome
+
+                var listaStudenti = [
+
+                    {
+                        'nome' : 'Pietro',
+                        'cognome' : 'Santo',
+                        'età' : '30'
+                    },
+
+                    {
+                        'nome' : 'Francesco',
+                        'cognome' : 'Pizzo',
+                        'età' : '20'
+                    },
+
+                     {
+                        'nome' : 'Harry',
+                        'cognome' : 'Tito',
+                        'età' : '50'
+                    }
+
+                ];
+
+                // versione for in
+                for (var studente in listaStudenti) {
+                    var studenteSingolo = listaStudenti[studente];//qui ogni creo una variabile (studenteSingolo), per non portarmi dietro sempre la []
+                     // console.log(studenteCorrente['nome'] + ' ' + studenteCorrente['cognome']);
+                     //per guardare ciò ke stampo, devo sempre richiamare la variabile appena fatta con la [] e quello ke voglio estrapolare
+                     //ma stampa solo il nome..... se voglio la descrizione cioè 'nome' francesco devo fare un secondo for
+
+                     for (var descrizione in studenteSingolo) {//secondo for per avere la descrizione, dove invento una nuova var(descrizione), e lo confronto con studenteSingolo,(dato ke ho creato la var)
+
+                         // se la descrizione è uguale a 'nome' dello studente oppure(||) descrizione è uguale a 'cognome'(stampala)
+                         // if (descrizione == 'nome' || descrizione == 'cognome') {creo una condizione di stampa
+                         //     console.log(descrizione, studenteCorrente[descrizione]);
+                         // }
+
+                        // alternativa, se descrizione è diversa da 'età' (non stamparla)
+                        if (descrizione !== 'età') {
+                            console.log(descrizione, studenteSingolo[descrizione]);
+                        }
+                     }
+                }
+
+                // versione for normale
+                /*for (var i = 0; i < listaStudenti.length; i++) {
+                    console.log(listaStudenti[i]);
+                }*/
+
+                // _____________________________________________________________________________
+
+                // - Dare la possibilità all'utente attraverso 3 prompt
+                // di aggiungere un nuovo oggetto studente inserendo nell'ordine: nome, cognome ed età.
+                // pusciarlo nell'array già fatto
+
+
+                var nuovoStudente = {
+
+                    'nome' : prompt('dammi il nome'),
+                    'cognome' : prompt('dammi il cognome'),
+                    'età' : prompt('dammi il età')
+
+                }
+
+                listaStudenti.push(nuovoStudente);
+                console.log(listaStudenti);
         </script>
     </body>
 </html>
