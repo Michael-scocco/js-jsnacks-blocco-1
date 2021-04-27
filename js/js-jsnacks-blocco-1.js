@@ -33,8 +33,19 @@ console.log('la prima parola è lunga ' + firstLng + ' la seconda parola è ling
 if (firstLng > secondLng) {
     console.log('la prima parola e più lunga' + firstLng);
 } else if(firstLng < secondLng){
-    console.log('la seconda parola e più lunga' + secondLng);
+    console.log('la seconda parola e più lunga ' + secondLng);
 
 }else {
     console.log('le parole sono lunghe uguali');
+}
+
+//TERZO ESERCIZIO
+//Il software deve chiedere per 10 volte all’utente di inserire un numero.
+//Il programma stampa la somma di tutti i numeri inseriti.
+let total = 0;
+for (var i = 0; i < 10; i++) {
+    let numberUtent = Number(prompt('dammi un numero'));
+    console.log(numberUtent);
+    total += numberUtent;
+    console.log(total, numberUtent);
 }
