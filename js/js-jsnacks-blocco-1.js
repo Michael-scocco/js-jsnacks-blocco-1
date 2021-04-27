@@ -111,3 +111,14 @@ if (present) {
 }else {
     console.log('non sei nella lista mi dispiace');
 }
+
+// seconda versione
+
+if (listNameGatsby.includes(nameUtentGatsby)) {
+    console.log('ok puoi entrare sei nella lista');
+
+}else {
+    console.log('non sei nella lista mi dispiace');
+
+
+}
