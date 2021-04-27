@@ -122,3 +122,26 @@ if (listNameGatsby.includes(nameUtentGatsby)) {
 
 
 }
+
+/******************
+//QUINTO ESERCIZIO*
+******************/
+
+//Crea un array vuoto.
+// chiedi per 6 volte all'utente di inserire un numero.
+// se è dispari inseriscilo nell'array
+
+var listNumber = [];
+console.log(listNumber);
+for (var i = 0; i < 6; i++) {
+
+    var numberUtente = prompt('dammi un numero');
+        console.log(numberUtente);
+
+    if (numberUtente % 2 == 1) {
+        listNumber.push(numberUtente);
+        console.log(listNumber, 'questo numero è dispari quindi entra ' + numberUtente);
+    }else {
+        console.log(numberUtente + ' questo numero è pari, quindi non entra');
+    }
+}
