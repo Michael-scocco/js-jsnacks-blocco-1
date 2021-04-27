@@ -22,6 +22,7 @@ if (first > second) {
 
 //SECONDO ESERCIZIO
 // L’utente inserisce due parole in successione, con due prompt.
+/*
 let firstWord = prompt('dammi una parola');
 let secondWord = prompt('dammi un\'altra parola');
 console.log(firstWord, secondWord);
@@ -38,14 +39,43 @@ if (firstLng > secondLng) {
 }else {
     console.log('le parole sono lunghe uguali');
 }
+*/
 
 //TERZO ESERCIZIO
 //Il software deve chiedere per 10 volte all’utente di inserire un numero.
 //Il programma stampa la somma di tutti i numeri inseriti.
+
+// versione for
+
 let total = 0;
 for (var i = 0; i < 10; i++) {
-    let numberUtent = Number(prompt('dammi un numero'));
+    let numberUtent = Number(prompt('give me a number'));
     console.log(numberUtent);
     total += numberUtent;
     console.log(total, numberUtent);
 }
+
+// versione while
+
+var i = 0;
+var total = 0;
+while (i < 10) {
+    let numberUtent = Number(prompt('give me a number'));
+    console.log(numberUtent);
+    total += numberUtent;
+    i++
+    console.log(total, numberUtent, i);
+};
+
+// versione DO while
+
+let total = 0;
+var i = 0;
+
+do {
+    let numberUtent = Number(prompt('give me a number'));
+    total += numberUtent;
+    i++;
+    console.log(total, numberUtent, i);
+
+} while (i < 3);
