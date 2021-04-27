@@ -46,7 +46,7 @@ if (firstLng > secondLng) {
 //Il programma stampa la somma di tutti i numeri inseriti.
 
 // versione for
-
+/*
 let total = 0;
 for (var i = 0; i < 10; i++) {
     let numberUtent = Number(prompt('give me a number'));
@@ -54,9 +54,10 @@ for (var i = 0; i < 10; i++) {
     total += numberUtent;
     console.log(total, numberUtent);
 }
+*/
 
 // versione while
-
+/*
 var i = 0;
 var total = 0;
 while (i < 10) {
@@ -66,9 +67,10 @@ while (i < 10) {
     i++
     console.log(total, numberUtent, i);
 };
+*/
 
 // versione DO while
-
+/*
 let total = 0;
 var i = 0;
 
@@ -79,3 +81,33 @@ do {
     console.log(total, numberUtent, i);
 
 } while (i < 3);
+*/
+
+
+/******************
+//QUARTO ESERCIZIO*
+******************/
+
+// In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby,
+// chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
+
+const listNameGatsby = ['anna', 'ariel', 'michele', 'john', 'stephen'];
+console.log(listNameGatsby);
+
+let nameUtentGatsby = prompt('give me your name');
+
+let present = false;
+
+for (var i = 0; i < listNameGatsby.length; i++) {
+    let nameInList = listNameGatsby[i];
+
+    if (nameUtentGatsby === nameInList) {
+        present = true;
+    }
+}
+
+if (present) {
+    console.log('ok puoi entrare sei nella lista');
+}else {
+    console.log('non sei nella lista mi dispiace');
+}
