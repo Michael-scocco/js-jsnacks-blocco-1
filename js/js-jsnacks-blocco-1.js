@@ -155,10 +155,25 @@ for (var i = 0; i < 6; i++) {
 //dove N è un numero indicato dall'utente
 
 
-var array = [];
+//dove N è un numero indicato dall'utente
+var n = Number(prompt('dammi un ciclo'));
+console.log(n);
+for (var i = 0; i < n; i++) {
+    // stampa il cubo dei primi N numeri,
+    console.log(Math.pow(i,3));
+}
 
-for (var i = 0; i < 5; i++) {
+/************
+SNACK8      *
+************/
 
-    var numeri = Number(prompt('dammi un numero'));
-    console.log(array, array.push(Math.pow(numeri,3)));
+// Chiedi un numero di 4 cifre all’utente
+var quattroCifre = prompt('dammi un numero da 4 cifre');
+var stringareUtente = quattroCifre.toString();
+console.log(stringareUtente, quattroCifre);
+var sum = 0;
+// e calcola la somma di tutte le cifre che compongono il numero.
+for (var i = 0; i < stringareUtente.length; i++) {
+    sum += Number(stringareUtente[i])
+    console.log(sum);
 }
