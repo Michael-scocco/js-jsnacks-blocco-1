@@ -145,3 +145,20 @@ for (var i = 0; i < 6; i++) {
         console.log(numberUtente + ' questo numero è pari, quindi non entra');
     }
 }
+
+/******************
+//SESTO ESERCIZIO*
+******************/
+
+// stampa il cubo dei primi N numeri,
+
+//dove N è un numero indicato dall'utente
+
+
+var array = [];
+
+for (var i = 0; i < 5; i++) {
+
+    var numeri = Number(prompt('dammi un numero'));
+    console.log(array, array.push(Math.pow(numeri,3)));
+}
