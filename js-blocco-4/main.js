@@ -43,12 +43,11 @@ var TriangoloRett = {
     altezza : 5
 };
 
-var base = Number(TriangoloRett.base);
-var altezza = Number(TriangoloRett.altezza);
-var ipotenusa = Number(Math.pow(2,base)) + Number(Math.pow(2,altezza));
+var base = TriangoloRett.base;
+var altezza = TriangoloRett.altezza;
+TriangoloRett.area = (base * altezza) / 2;
 
+var ipotenusa = Number(Math.pow(2,base)) + Number(Math.pow(2,altezza));
 console.log('ipotenusa ' + Math.sqrt(ipotenusa));
-var perimetro = base + altezza + Math.sqrt(ipotenusa);
-console.log('questo è il perimetro ' + perimetro);
-var area = (base * altezza) / 2;
-console.log('l\'oggetto ' + TriangoloRett + ' la base ' +  base + ' l\altezza ' + altezza + ' il risultato ' + area);
+TriangoloRett.perimetro = base + altezza + Math.sqrt(ipotenusa);
+console.log(TriangoloRett);
