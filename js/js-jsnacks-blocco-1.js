@@ -85,12 +85,12 @@ do {
 
 
 /******************
-//QUARTO ESERCIZIO*
+QUARTO ESERCIZIO*
 ******************/
 
 // In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby,
 // chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
-
+/*
 const listNameGatsby = ['anna', 'ariel', 'michele', 'john', 'stephen'];
 console.log(listNameGatsby);
 
@@ -122,15 +122,15 @@ if (listNameGatsby.includes(nameUtentGatsby)) {
 
 
 }
-
+*/
 /******************
-//QUINTO ESERCIZIO*
+QUINTO ESERCIZIO*
 ******************/
 
 //Crea un array vuoto.
 // chiedi per 6 volte all'utente di inserire un numero.
 // se è dispari inseriscilo nell'array
-
+/*
 var listNumber = [];
 console.log(listNumber);
 for (var i = 0; i < 6; i++) {
@@ -145,28 +145,43 @@ for (var i = 0; i < 6; i++) {
         console.log(numberUtente + ' questo numero è pari, quindi non entra');
     }
 }
-
+*/
 /******************
-//SESTO ESERCIZIO*
+SESTO ESERCIZIO*
 ******************/
 
 // stampa il cubo dei primi N numeri,
 
 //dove N è un numero indicato dall'utente
 
-
+/*
 //dove N è un numero indicato dall'utente
 var n = Number(prompt('dammi un ciclo'));
 console.log(n);
-for (var i = 0; i < n; i++) {
+for (var i = 0; i <= n; i++) {
     // stampa il cubo dei primi N numeri,
     console.log(Math.pow(i,3));
 }
+*/
+/************
+SNACK7      *
+************/
+
+// stampa le potenze di 2 fino a 1000. (2n)
+/*
+var contatore = 0;//questo sarebbe la mia i
+
+while (Math.pow(2,contatore) < 1000) {
+    console.log(Math.pow(2,contatore));
+    contatore++
+}
+*/
+
 
 /************
 SNACK8      *
 ************/
-
+/*
 // Chiedi un numero di 4 cifre all’utente
 var quattroCifre = prompt('dammi un numero da 4 cifre');
 var stringareUtente = quattroCifre.toString();
@@ -177,3 +192,19 @@ for (var i = 0; i < stringareUtente.length; i++) {
     sum += Number(stringareUtente[i])
     console.log(sum);
 }
+*/
+
+
+
+/**********************************
+FARE NUOVA CARTELLA SNAKS BLOCCO 4*
+**********************************/
+/*
+creare un oggetto palla che abbia le seguenti proprietà.
+nome = palla;
+peso = 10;
+*/
+var pallaOgg = {
+    nome : 'palla',
+    peso : 10,
+};
